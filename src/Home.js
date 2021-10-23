@@ -9,6 +9,7 @@ const Home=()=>{
     useEffect(()=> {
         axios.get('https://regres.in/api/unknown')
             .then(res=>{
+
                 console.log('Colors Data: ',res.data.data)
                 setColorsData(res.data.data)
             })
